@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Countries from './components/Countries/Countries';
 
 function App() {
   return (
     <div className="App">
-       <h1>Hello World</h1>
-       <LoadCountries></LoadCountries>
-    </div>
+       {/* <h1>Hello World</h1>
+       <LoadCountries></LoadCountries> */}
+       <Countries></Countries>
+    </div> 
   );
 }
-
+/* 
 const LoadCountries = () => {
   const [countries, setCountries] = useState([]);
   useEffect( () => {
@@ -27,8 +29,8 @@ const LoadCountries = () => {
     </div>
   )
 }
-
-const Country = (props) => {
+ */
+/* const Country = (props) => {
   return (
     <div style={{backgroundColor: 'aqua', color: 'black', padding: '20px', margin: '20px', border: '3px solid tomato', borderRadius: '20px'}} className="">
       <h2>Country Name: {props.name}</h2>
@@ -38,5 +40,5 @@ const Country = (props) => {
     </div>
   )
 }
-
+ */
 export default App;
